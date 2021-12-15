@@ -1,0 +1,1 @@
+Challenges found at https://adventofcode.com/2021/
