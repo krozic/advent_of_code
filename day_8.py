@@ -114,12 +114,17 @@ big_sample = [
 'gcafb gcf dcaebfg ecagb gf abcdeg gaef cafbge fdbac fegbdc | fgae cfgab fg bagce'
 ]
                 
+answer_1 = ''
 for sample in big_sample:
-    print(number_converter(sample))
+    answer_1 += number_converter(sample)
                 
-                
+part_1 = answer_1.count('1') + answer_1.count('4') + answer_1.count('7') + answer_1.count('8')
+print(part_1)
 
-
+answer_2 = 0
+for sample in input_sample.split('\n'):
+    answer_2 += int(number_converter(sample))
+print(answer_2)
 
 
 
